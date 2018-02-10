@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER Matt Bentley <mbentley@mbentley.net> and Gaurang Vyas <gdvyas@gmail.com>
+MAINTAINER m.benyoub@itsolutions.dz
 
 RUN apt-get update \
     && apt-get -y --no-install-recommends install \
