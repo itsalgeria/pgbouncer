@@ -13,7 +13,7 @@ ENV PG_ENV_POSTGRESQL_MAX_CLIENT_CONN 10000
 ENV PG_ENV_POSTGRESQL_DEFAULT_POOL_SIZE 400
 ENV PG_ENV_POSTGRESQL_SERVER_IDLE_TIMEOUT 240
 ADD run.sh /usr/local/bin/run
-
+VOLUME ["/etc/pgbouncer/pgbouncer.ini"]
 RUN chmod +x /usr/local/bin/run
 EXPOSE 6432
 CMD ["/usr/local/bin/run"]
