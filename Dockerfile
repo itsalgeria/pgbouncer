@@ -22,6 +22,5 @@ RUN ls -R /pgbouncer
 VOLUME ["/etc/pgbouncer/pgbouncer.ini"]
 RUN apk --update add libevent openssl c-ares
 WORKDIR /
-COPY --from=build_stage /pgbouncer /pgbouncer
 ADD entrypoint.sh ./
 ENTRYPOINT ["./entrypoint.sh"]
