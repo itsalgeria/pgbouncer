@@ -16,4 +16,5 @@ ADD run.sh /usr/local/bin/run
 
 RUN chmod +x /usr/local/bin/run
 EXPOSE 6432
+VOLUME ["/tmp/pgbouncer/etc/pgbconf.ini"]
 CMD ["/usr/local/bin/run"]
